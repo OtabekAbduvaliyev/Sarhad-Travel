@@ -492,6 +492,18 @@
         "location": "Buxoro"
       }
     },
+    "cultural": {
+      "1": {
+        "name": "Aziza Karimova",
+        "comment": "Madaniy sayohat tajribasi ajoyib bo'ldi. Mahalliy an'analar va urf-odatlarni yaqindan o'rganish imkoniyati berildi.",
+        "location": "Samarqand"
+      },
+      "2": {
+        "name": "Jamshid Alimov",
+        "comment": "Professional yo'riqchilar va qiziqarli dastur tufayli O'zbekiston madaniyatini yanada chuqurroq angladim.",
+        "location": "Buxoro"
+      }
+    },
     "tripTo": "Sayohat"
   },
   "adventurePlanner": {

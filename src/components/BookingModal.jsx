@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { sendToTelegram } from '../utils/telegram';
-
+import { ToastContainer, toast } from 'react-toastify';
 const BookingModal = ({ isOpen, onClose, tourData }) => {
     const { t } = useTranslation();
     const [formData, setFormData] = useState({
@@ -57,10 +57,13 @@ const BookingModal = ({ isOpen, onClose, tourData }) => {
                 };
 
                 await sendToTelegram(bookingData);
+                toast('Booking submitted successfully!');
+                console.log('Booking submitted successfully!');
                 onClose();
                 // You might want to show a success message or redirect
             } catch (error) {
                 console.error('Error submitting booking:', error);
+                toast('Booking submitted successfully!');
                 setErrors({ submit: t('bookingModal.errors.submitError') });
             } finally {
                 setIsSubmitting(false);
@@ -140,7 +143,6 @@ const BookingModal = ({ isOpen, onClose, tourData }) => {
                         {errors.submit && (
                             <p className="text-red-500 text-sm">{errors.submit}</p>
                         )}
-
                         <div className="flex justify-end space-x-3 mt-6">
                             <button
                                 type="button"

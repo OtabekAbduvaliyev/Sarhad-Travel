@@ -131,21 +131,7 @@ const CategoryDetails = () => {
             ]
           }
         ],
-        gallery: defaultImages.weather,
-        testimonials: [
-          {
-            name: t('testimonials.weather.1.name', 'John Doe'),
-            comment: t('testimonials.weather.1.comment', 'The weather forecasting helped me plan my trip perfectly!'),
-            rating: 5,
-            location: t('testimonials.weather.1.location', 'New York')
-          },
-          {
-            name: t('testimonials.weather.2.name', 'Sarah Smith'),
-            comment: t('testimonials.weather.2.comment', 'Real-time alerts saved our outdoor event!'),
-            rating: 5,
-            location: t('testimonials.weather.2.location', 'London')
-          }
-        ]
+        gallery: defaultImages.weather
       },
       flights: {
         title: t('categories.items.flights.title', 'Flight Booking'),
@@ -183,21 +169,7 @@ const CategoryDetails = () => {
             ]
           }
         ],
-        gallery: defaultImages.flights,
-        testimonials: [
-          {
-            name: t('testimonials.flights.1.name', 'Mike Johnson'),
-            comment: t('testimonials.flights.1.comment', 'Found the best flight deals through this service!'),
-            rating: 5,
-            location: t('testimonials.flights.1.location', 'Sydney')
-          },
-          {
-            name: t('testimonials.flights.2.name', 'Emma Wilson'),
-            comment: t('testimonials.flights.2.comment', 'Smooth booking process and great customer support'),
-            rating: 5,
-            location: t('testimonials.flights.2.location', 'Toronto')
-          }
-        ]
+        gallery: defaultImages.flights
       },
       events: {
         title: t('categories.items.events.title', 'Local Events'),
@@ -206,27 +178,27 @@ const CategoryDetails = () => {
         features: [
           { 
             title: t('categories.items.events.features.calendar', 'Event Calendar'),
-            description: t('categories.items.events.features.calendarDesc', 'Browse and plan your activities'),
+            description: t('categories.items.events.features.calendarDesc', 'Plan events with interactive calendar'),
             icon: FaRegCalendarAlt,
             stats: [
               t('categories.items.events.stats.events', 'Daily Events'),
               t('categories.items.events.stats.venues', 'Partner Venues'),
-              t('categories.items.events.stats.booking', 'Instant Booking')
+              t('categories.items.events.stats.booking', 'Quick Booking')
             ]
           },
           { 
             title: t('categories.items.events.features.booking', 'Event Booking'),
-            description: t('categories.items.events.features.bookingDesc', 'Secure your spots at events'),
+            description: t('categories.items.events.features.bookingDesc', 'Book popular local events'),
             icon: MdEventAvailable,
             stats: [
               t('categories.items.events.stats.updates', 'Live Updates'),
-              t('categories.items.events.stats.categories', 'Event Categories'),
+              t('categories.items.events.stats.categories', 'Event Types'),
               t('categories.items.events.stats.exclusive', 'Exclusive Events')
             ]
           },
           { 
-            title: t('categories.items.events.features.recommendations', 'Recommendations'),
-            description: t('categories.items.events.features.recommendationsDesc', 'Get personalized suggestions'),
+            title: t('categories.items.events.features.recommendations', 'Personal Recommendations'),
+            description: t('categories.items.events.features.recommendationsDesc', 'Get event recommendations'),
             icon: MdLocationOn,
             stats: [
               t('categories.items.events.stats.local', 'Local Experiences'),
@@ -235,30 +207,16 @@ const CategoryDetails = () => {
             ]
           }
         ],
-        gallery: defaultImages.events,
-        testimonials: [
-          {
-            name: t('testimonials.events.1.name'),
-            comment: t('testimonials.events.1.comment'),
-            rating: 5,
-            location: t('testimonials.events.1.location')
-          },
-          {
-            name: t('testimonials.events.2.name'),
-            comment: t('testimonials.events.2.comment'),
-            rating: 5,
-            location: t('testimonials.events.2.location')
-          }
-        ]
+        gallery: defaultImages.events
       },
       customization: {
-        title: t('categories.items.customization.title', 'Customization'),
-        description: t('categories.items.customization.description', 'Personalize your travel experience'),
+        title: t('categories.items.customization.title', 'Trip Customization'),
+        description: t('categories.items.customization.description', 'Customize your travel experience'),
         ...categoryColors.customization,
         features: [
           { 
             title: t('categories.items.customization.features.itinerary', 'Custom Itinerary'),
-            description: t('categories.items.customization.features.itineraryDesc', 'Create your perfect schedule'),
+            description: t('categories.items.customization.features.itineraryDesc', 'Create your perfect travel schedule'),
             icon: FaRegCalendarAlt,
             stats: [
               t('categories.items.customization.stats.options', 'Customization Options'),
@@ -268,7 +226,7 @@ const CategoryDetails = () => {
           },
           { 
             title: t('categories.items.customization.features.preferences', 'Travel Preferences'),
-            description: t('categories.items.customization.features.preferencesDesc', 'Set your preferences'),
+            description: t('categories.items.customization.features.preferencesDesc', 'Set preferences for personalized experience'),
             icon: FaCog,
             stats: [
               t('categories.items.customization.stats.experts', 'Travel Experts'),
@@ -278,7 +236,7 @@ const CategoryDetails = () => {
           },
           { 
             title: t('categories.items.customization.features.assistance', 'Personal Assistant'),
-            description: t('categories.items.customization.features.assistanceDesc', 'Get expert help'),
+            description: t('categories.items.customization.features.assistanceDesc', 'Get help from travel experts'),
             icon: MdLocationOn,
             stats: [
               t('categories.items.customization.stats.languages', 'Languages'),
@@ -287,30 +245,16 @@ const CategoryDetails = () => {
             ]
           }
         ],
-        gallery: defaultImages.customization,
-        testimonials: [
-          {
-            name: t('testimonials.customization.1.name'),
-            comment: t('testimonials.customization.1.comment'),
-            rating: 5,
-            location: t('testimonials.customization.1.location')
-          },
-          {
-            name: t('testimonials.customization.2.name'),
-            comment: t('testimonials.customization.2.comment'),
-            rating: 5,
-            location: t('testimonials.customization.2.location')
-          }
-        ]
+        gallery: defaultImages.customization
       },
       adventure: {
         title: t('categories.items.adventure.title', 'Adventure Tours'),
-        description: t('categories.items.adventure.description', 'Embark on thrilling adventures'),
+        description: t('categories.items.adventure.description', 'Experience thrilling adventures'),
         ...categoryColors.adventure,
         features: [
           { 
             title: t('categories.items.adventure.features.activities', 'Adventure Activities'),
-            description: t('categories.items.adventure.features.activitiesDesc', 'Choose exciting activities'),
+            description: t('categories.items.adventure.features.activitiesDesc', 'Choose from exciting activities'),
             icon: MdExplore,
             stats: [
               t('categories.items.adventure.stats.adventures', 'Adventure Types'),
@@ -320,17 +264,17 @@ const CategoryDetails = () => {
           },
           { 
             title: t('categories.items.adventure.features.equipment', 'Equipment Rental'),
-            description: t('categories.items.adventure.features.equipmentDesc', 'Access quality gear'),
+            description: t('categories.items.adventure.features.equipmentDesc', 'Access quality adventure gear'),
             icon: FaCog,
             stats: [
               t('categories.items.adventure.stats.equipment', 'Equipment Options'),
-              t('categories.items.adventure.stats.safety', 'Safety Record'),
+              t('categories.items.adventure.stats.safety', 'Safety Rating'),
               t('categories.items.adventure.stats.training', 'Training Sessions')
             ]
           },
           { 
             title: t('categories.items.adventure.features.guides', 'Expert Guides'),
-            description: t('categories.items.adventure.features.guidesDesc', 'Professional guidance'),
+            description: t('categories.items.adventure.features.guidesDesc', 'Professional guides for safety'),
             icon: MdLocationOn,
             stats: [
               t('categories.items.adventure.stats.difficulty', 'Difficulty Levels'),
@@ -339,21 +283,7 @@ const CategoryDetails = () => {
             ]
           }
         ],
-        gallery: defaultImages.adventure,
-        testimonials: [
-          {
-            name: t('testimonials.adventure.1.name'),
-            comment: t('testimonials.adventure.1.comment'),
-            rating: 5,
-            location: t('testimonials.adventure.1.location')
-          },
-          {
-            name: t('testimonials.adventure.2.name'),
-            comment: t('testimonials.adventure.2.comment'),
-            rating: 5,
-            location: t('testimonials.adventure.2.location')
-          }
-        ]
+        gallery: defaultImages.adventure
       },
       cultural: {
         title: t('categories.items.cultural.title', 'Cultural Experiences'),
@@ -391,21 +321,7 @@ const CategoryDetails = () => {
             ]
           }
         ],
-        gallery: defaultImages.cultural,
-        testimonials: [
-          {
-            name: t('testimonials.cultural.1.name'),
-            comment: t('testimonials.cultural.1.comment'),
-            rating: 5,
-            location: t('testimonials.cultural.1.location')
-          },
-          {
-            name: t('testimonials.cultural.2.name'),
-            comment: t('testimonials.cultural.2.comment'),
-            rating: 5,
-            location: t('testimonials.cultural.2.location')
-          }
-        ]
+        gallery: defaultImages.cultural
       }
     };
 
@@ -444,8 +360,7 @@ const CategoryDetails = () => {
   const tabs = [
     { id: 'overview', label: t('common.overview', 'Overview') },
     { id: 'features', label: t('common.features', 'Features') },
-    { id: 'gallery', label: t('common.gallery', 'Gallery') },
-    { id: 'testimonials', label: t('common.testimonials', 'Testimonials') }
+    { id: 'gallery', label: t('common.gallery', 'Gallery') }
   ];
 
   if (isLoading) {
@@ -576,16 +491,7 @@ const CategoryDetails = () => {
                         </span>
                       ))}
                     </div>
-                    <button
-                      onClick={() => handleBookNow({
-                        name: t('tours.name'),
-                        price: t('tours.price'),
-                        date: t('tours.date')
-                      })}
-                      className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                    >
-                      {t('tours.bookNow')}
-                    </button>
+
                   </motion.div>
                 ))}
               </div>
@@ -645,43 +551,6 @@ const CategoryDetails = () => {
                         View Image
                       </button>
                     </div>
-                  </motion.div>
-                ))}
-              </div>
-            )}
-
-            {activeTab === 'testimonials' && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {categoryData.testimonials.map((testimonial, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    className="bg-white rounded-2xl p-6 shadow-xl"
-                  >
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center mr-4">
-                        {testimonial.name.charAt(0)}
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-semibold text-gray-900">{testimonial.name}</h4>
-                        <p className="text-sm text-gray-600">{testimonial.location}</p>
-                      </div>
-                      <div className="ml-auto flex">
-                        {[...Array(testimonial.rating)].map((_, i) => (
-                          <svg
-                            key={i}
-                            className="w-5 h-5 text-yellow-400"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                          >
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                          </svg>
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-gray-600">{testimonial.comment}</p>
                   </motion.div>
                 ))}
               </div>
