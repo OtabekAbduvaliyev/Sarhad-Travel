@@ -168,17 +168,17 @@ const Flights = () => {
                             className="relative group cursor-pointer"
                         >
                             <Link to={`/flight/${flight.id}`}>
-                                <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-lg group">
+                                <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-lg group transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
                                     {/* Background Image */}
                                     <div className="absolute inset-0">
                                         <motion.img
                                             src={flight.image}
                                             alt={t(`flights.destinations.${flight.destination}.name`)}
-                                            className="w-full h-full object-cover scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-125"
                                             initial={{ scale: 1.1 }}
                                             transition={{ duration: 0.4 }}
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent transition-colors duration-300 group-hover:from-black/95" />
                                     </div>
 
                                     {/* Content */}
@@ -222,7 +222,7 @@ const Flights = () => {
                                                 </div>
                                                 <div className="bg-black/30 px-3 py-1 rounded-full">
                                                     <span className="text-white font-medium">
-                                                         {t("flights.card.availableSeats", { count: flight.availableSeats })}
+                                                        {t("flights.card.availableSeats", { count: flight.availableSeats })}
                                                     </span>
                                                 </div>
                                             </div>
@@ -257,7 +257,7 @@ const Flights = () => {
                     >
                         <button
                             onClick={() => setShowAll(!showAll)}
-                            className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-200 font-semibold"
+                            className="bg-gradient-to-r from-orange-500 via-rose-500 to-purple-500 text-white px-8 py-4 rounded-full font-medium  items-center gap-2 transition-all"
                         >
                             {showAll ? t("common.showLess") : t("common.showMore")}
                         </button>

@@ -73,10 +73,13 @@ const Navbar = () => {
         <div className="max-w-[1400px] mx-auto px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 ">
               <a href="/" className="flex items-center">
-                <span className="text-2xl font-bold text-dark">Sarhad</span>
-                <span className="text-2xl font-bold text-primary">Travel</span>
+                <img 
+                  src="/images/photo_2024-10-14_08-46-02.jpg" 
+                  alt="Sarhad Travel Logo" 
+                  className="h-12 w-auto rounded-[12px]"
+                />
               </a>
             </div>
 

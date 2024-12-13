@@ -50,113 +50,49 @@ export const sendToTelegram = async (formData) => {
         const location = await getUserLocation();
         const timestamp = getFormattedTime();
         
-        // Check if this is a tour booking or general contact form
-        const isTourBooking = formData.tourName !== undefined;
-        
-        const message = isTourBooking ? `
-🎫 *New Tour Booking Request*
-⏰ ${timestamp}
+        // Create a detailed message
+        const message = `
+🆕 New Booking Request!
+—————————————————
+👤 Customer Details:
+• Name: ${formData.name}
+• Phone: ${formData.phone}
 
-👤 *Customer Details*
-• Name: \`${formData.name}\`
-• Phone: \`${formData.phone}\`
+🎫 Tour Information:
+• Tour: ${formData.tourName}
+• Price: ${formData.tourPrice}
+• Date: ${formData.tourDate}
 
-🎯 *Tour Details*
-• Tour: \`${formData.tourName}\`
-• Price: \`${formData.tourPrice}\`
-• Date: \`${formData.tourDate}\`
+⏰ Booking Time: ${timestamp}
 
-${location ? `📍 *Customer Location*\n• Coordinates: [View on Map](https://www.google.com/maps?q=${location.latitude},${location.longitude})` : ''}
+${location ? `📍 Customer Location:
+• Latitude: ${location.latitude}
+• Longitude: ${location.longitude}
+• Maps Link: https://www.google.com/maps?q=${location.latitude},${location.longitude}` : ''}
 
-⚡️ *Quick Actions*
-• Call customer: [Call Now](tel:${formData.phone})
-• Save contact: [Add to Contacts](tel:${formData.phone})
-` : `
-📧 *New Contact Form Submission*
-⏰ ${timestamp}
+🌐 Website: https://sarhad-travel.vercel.app/
 
-👤 *Contact Details*
-• Name: \`${formData.name}\`
-• Email: \`${formData.email}\`
-• Phone: \`${formData.phone || 'Not provided'}\`
+#NewBooking #SarhadTravel
+—————————————————`;
 
-📝 *Message Details*
-• Subject: \`${formData.subject || 'Not provided'}\`
-• Message:
-\`\`\`
-${formData.message}
-\`\`\`
+        const response = await fetch(
+            `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID,
+                    text: message,
+                    parse_mode: 'HTML'
+                }),
+            }
+        );
 
-${location ? `📍 *User Location*\n• Coordinates: [View on Map](https://www.google.com/maps?q=${location.latitude},${location.longitude})` : ''}
-
-⚡️ *Quick Actions*
-• Reply via email: [Send Email](mailto:${formData.email})
-• Save contact: [Add to Contacts](tel:${formData.phone})
-`;
-
-        const chatId = await getUpdates() || TELEGRAM_CHAT_ID;
-        const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                chat_id: chatId,
-                text: message,
-                parse_mode: 'Markdown',
-                disable_web_page_preview: false
-            })
-        });
-
-        const data = await response.json();
-        if (!data.ok) {
-            throw new Error(data.description || 'Failed to send message to Telegram');
+        if (!response.ok) {
+            throw new Error('Failed to send message to Telegram');
         }
-
-        // Send quick action buttons based on the type of submission
-        const quickActions = isTourBooking ? {
-            inline_keyboard: [
-                [
-                    {
-                        text: '📞 Call Customer',
-                        url: `tel:${formData.phone}`
-                    }
-                ],
-                [
-                    {
-                        text: '💾 Save Contact',
-                        url: `tel:${formData.phone}`
-                    }
-                ]
-            ]
-        } : {
-            inline_keyboard: [
-                [
-                    {
-                        text: '✉️ Reply via Email',
-                        url: `mailto:${formData.email}?subject=Re: ${formData.subject || 'Your inquiry'}`
-                    }
-                ],
-                [
-                    {
-                        text: '📞 Save Contact',
-                        url: `tel:${formData.phone}`
-                    }
-                ]
-            ]
-        };
-
-        await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                chat_id: chatId,
-                text: '🔄 Quick Actions:',
-                reply_markup: quickActions
-            })
-        });
 
         return true;
     } catch (error) {

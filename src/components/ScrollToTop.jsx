@@ -22,13 +22,36 @@ const ScrollToTop = () => {
     };
   }, []);
 
-  // Scroll to top whenever location changes
+  // Scroll to top only on navigation, not on browser back/forward
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    if (location.hash) {
+      // If there's a hash, scroll to the element
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else if (!window.history.state?.scroll) {
+      // Only scroll to top if it's not a back/forward navigation
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
   }, [location]);
+
+  // Save scroll position before leaving the page
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.pageYOffset;
+      window.history.replaceState(
+        { ...window.history.state, scroll: currentScroll },
+        document.title
+      );
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Scroll to top function for button click
   const scrollToTop = () => {

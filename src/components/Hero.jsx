@@ -54,11 +54,11 @@ const Hero = () => {
   const { t } = useTranslation();
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const navigate = useNavigate();
-  
+
   const scrollToFlights = () => {
     const element = document.querySelector('#flights');
     if (element) {
-      element.scrollIntoView({ 
+      element.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
       });
@@ -72,7 +72,7 @@ const Hero = () => {
         const element = document.querySelector(`#${targetId}`);
         if (element) {
           e.preventDefault();
-          element.scrollIntoView({ 
+          element.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
           });
@@ -120,14 +120,14 @@ const Hero = () => {
       {/* Main Content */}
       <div className="w-full grid lg:grid-cols-2 gap-16 items-center">
         {/* Left Column */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
           {/* Top Badge */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3 }}
@@ -182,13 +182,14 @@ const Hero = () => {
           <div className="flex flex-wrap items-center gap-6">
             <motion.button
               onClick={scrollToFlights}
-              whileHover={{ scale: 1.05 }}
+              // whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-orange-500 via-rose-500 to-purple-500 text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
+              className="bg-gradient-to-r from-orange-500 via-rose-500 to-purple-500 text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 transition-all"
             >
               {t('hero.cta.start')} <FaArrowRight className="text-sm" />
             </motion.button>
-            
+
+
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -246,7 +247,7 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/5 to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-l from-black/20 via-transparent to-transparent" />
             </div>
-            
+
             {/* Floating Elements */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -284,11 +285,11 @@ const Hero = () => {
 
             {/* Animated Decoration */}
             <motion.div
-              animate={{ 
+              animate={{
                 rotate: [0, 360],
                 scale: [1, 1.1, 1]
               }}
-              transition={{ 
+              transition={{
                 duration: 20,
                 repeat: Infinity,
                 ease: "linear"

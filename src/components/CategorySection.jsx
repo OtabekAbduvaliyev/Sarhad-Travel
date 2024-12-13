@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { FaPlane, FaCog, FaMapMarkedAlt, FaRegCompass } from 'react-icons/fa';
 import { IoSunnyOutline, IoTimeOutline, IoEarthOutline } from 'react-icons/io5';
-import { MdEventAvailable, MdExplore } from 'react-icons/md';
+import { MdEventAvailable, MdExplore, MdMuseum } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-const CategoryCard = ({ icon: Icon, title, description, color, lightColor, categoryId }) => {
+const CategoryCard = ({ icon: Icon, title, description, color, lightColor, categoryId, index }) => {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
@@ -48,7 +48,7 @@ const CategoryCard = ({ icon: Icon, title, description, color, lightColor, categ
           </div>
           {/* Number Badge */}
           <div className={`absolute -right-2 -top-2 w-6 h-6 rounded-full bg-white shadow-md flex items-center justify-center text-xs font-semibold text-gray-600 border border-gray-100`}>
-            01
+            {String(index + 1).padStart(2, '0')}
           </div>
         </div>
 
@@ -134,16 +134,16 @@ const CategorySection = () => {
       icon: MdExplore,
       title: t('categories.items.adventure.title'),
       description: t('categories.items.adventure.description'),
-      color: "bg-red-500",
-      lightColor: "bg-red-100",
+      color: "from-red-400 to-red-600",
+      lightColor: "from-red-400/10 to-red-600/10",
       categoryId: "adventure"
     },
     {
-      icon: MdEventAvailable,
+      icon: MdMuseum,
       title: t('categories.items.cultural.title'),
       description: t('categories.items.cultural.description'),
-      color: "bg-blue-500",
-      lightColor: "bg-blue-100",
+      color: "from-indigo-400 to-indigo-600",
+      lightColor: "from-indigo-400/10 to-indigo-600/10",
       categoryId: "cultural"
     }
   ];
@@ -179,7 +179,7 @@ const CategorySection = () => {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <CategoryCard {...category} />
+                <CategoryCard {...category} index={index} />
               </motion.div>
             ))}
           </div>

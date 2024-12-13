@@ -308,8 +308,8 @@
     },
     "card": {
       "hours": "hours",
-      "reviews": "{{count, plural, one {# review} other {# reviews}}}",
-      "availableSeats": "{{count, plural, one {# seat available} other {# seats available}}}",
+      "reviews": "{{count}} comment",
+      "availableSeats": "{{count}} seats",
       "price": "{{price}}",
       "perPerson": "per person",
       "duration": "Duration",

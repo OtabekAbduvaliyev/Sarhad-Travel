@@ -98,108 +98,6 @@
       "title": "Mashhur Toifalar",
       "description": "Eng ko'p so'ralgan sayohat tajribalarimizni kashf eting va o'zingizning mukammal sarguzashtingizni toping"
     },
-    "items": {
-      "weather": {
-        "title": "Ob-havo Ma'lumotlari",
-        "description": "Manzilingiz uchun real vaqt ob-havo ma'lumotlari"
-      },
-      "flights": {
-        "title": "Eng Yaxshi Parvozlar",
-        "description": "Eng qulay parvoz variantlarini toping"
-      },
-      "events": {
-        "title": "Mahalliy Tadbirlar",
-        "description": "Qiziqarli mahalliy tadbirlar va faoliyatlarni kashf eting",
-        "features": {
-          "calendar": "Tadbirlar Taqvimi",
-          "calendarDesc": "Interaktiv taqvim orqali tadbirlarni rejalashtiring",
-          "booking": "Tadbir Band Qilish",
-          "bookingDesc": "Mashhur mahalliy tabirlardan joy band qiling",
-          "recommendations": "Shaxsiy Tavsiyalar",
-          "recommendationsDesc": "Qiziqishlaringizga asoslangan tadbirlar tavsiyalari"
-        },
-        "stats": {
-          "events": "Kunlik Tadbirlar",
-          "venues": "Hamkor Joylar",
-          "booking": "Tezkor Band Qilish",
-          "updates": "Jonli Yangilanishlar",
-          "categories": "Tadbir Turlari",
-          "exclusive": "Maxsus Tadbirlar",
-          "local": "Mahalliy Tajribalar",
-          "cultural": "Madaniy Ko'rsatuvlar",
-          "activities": "Faoliyatlar"
-        }
-      },
-      "customization": {
-        "title": "Moslashtiruv",
-        "description": "Sayohat tajribangizni moslashtiring",
-        "features": {
-          "itinerary": "Maxsus Marshrut",
-          "itineraryDesc": "O'zingizga mos sayohat jadvalini tuzing",
-          "preferences": "Sayohat Afzalliklari",
-          "preferencesDesc": "Moslashtirilgan tajriba uchun afzalliklaringizni belgilang",
-          "assistance": "Shaxsiy Yordamchi",
-          "assistanceDesc": "Sayohat ekspertlaridan yordam oling"
-        },
-        "stats": {
-          "options": "Moslashtiruv Imkoniyatlari",
-          "satisfaction": "Mijoz Mamnuniyati",
-          "support": "24/7 Qo'llab-quvvatlash",
-          "experts": "Sayohat Ekspertlari",
-          "destinations": "Manzillar",
-          "activities": "Faoliyatlar",
-          "languages": "Tillar",
-          "packages": "Maxsus Paketlar",
-          "reviews": "Ijobiy Sharhlar"
-        }
-      },
-      "adventure": {
-        "title": "Sarguzasht Turlar",
-        "description": "Ajoyib manzaralarda hayajonli sarguzashtlarga boring",
-        "features": {
-          "activities": "Sarguzasht Faoliyatlari",
-          "activitiesDesc": "Turli qiziqarli faoliyatlardan tanlang",
-          "equipment": "Jihozlar Ijarasi",
-          "equipmentDesc": "Yuqori sifatli sarguzasht jihozlariga kirish",
-          "guides": "Tajribali Yo'riqchilar",
-          "guidesDesc": "Xavfsizligingiz uchun professional yo'riqchilar"
-        },
-        "stats": {
-          "adventures": "Sarguzasht Turlari",
-          "locations": "Manzillar",
-          "guides": "Tajribali Yo'riqchilar",
-          "equipment": "Jihozlar Tanlovlari",
-          "safety": "Xavfsizlik Ko'rsatkichi",
-          "training": "O'quv Mashg'ulotlari",
-          "difficulty": "Qiyinlik Darajalari",
-          "groups": "Guruh O'lchamlari",
-          "insurance": "Sug'urta Qamrovi"
-        }
-      },
-      "cultural": {
-        "title": "Madaniy Tajribalar",
-        "description": "Mahalliy an'analar va urf-odatlarni o'rganing",
-        "features": {
-          "traditions": "Mahalliy An'analar",
-          "traditionsDesc": "Haqiqiy madaniy amaliyotlarni o'rganing",
-          "workshops": "Madaniy Ustaxonalar",
-          "workshopsDesc": "An'anaviy san'at va hunarmandchilikni o'rganing",
-          "cuisine": "Mahalliy Taomlar",
-          "cuisineDesc": "Haqiqiy mahalliy taomlarni tating"
-        },
-        "stats": {
-          "experiences": "Madaniy Tajribalar",
-          "communities": "Mahalliy Jamoalar",
-          "workshops": "Haftalik Ustaxonalar",
-          "cuisine": "Mahalliy Taomlar",
-          "artisans": "Mahalliy Hunarmandlar",
-          "traditions": "An'anaviy Tadbirlar",
-          "languages": "Mahalliy Tillar",
-          "heritage": "Meros Joylari",
-          "festivals": "Yillik Festivallar"
-        }
-      }
-    },
     "button": "Batafsil",
     "notFound": "Kategoriya topilmadi",
     "items": {
@@ -247,6 +145,98 @@
           "deals": "Narx ogohlantirishlari",
           "exclusive": "Maxsus takliflar",
           "comparison": "Narxlarni taqqoslash"
+        }
+      },
+      "adventure": {
+        "title": "Sarguzashtlar",
+        "description": "Hayajonli va unutilmas sarguzashtlarni kashf eting",
+        "features": {
+          "activities": "Sarguzasht Faoliyatlari",
+          "activitiesDesc": "Turli xil hayajonli faoliyatlardan bahramand bo'ling",
+          "guides": "Professional Yo'riqchilar",
+          "guidesDesc": "Tajribali yo'riqchilar bilan xavfsiz sarguzashtlar",
+          "equipment": "Professional Jihozlar",
+          "equipmentDesc": "Sifatli va ishonchli sarguzasht jihozlari"
+        },
+        "stats": {
+          "activities": "Sarguzasht Turlari",
+          "guides": "Malakali Yo'riqchilar",
+          "safety": "Xavfsizlik Kafolati",
+          "equipment": "Professional Jihozlar",
+          "locations": "Sarguzasht Joylari",
+          "experience": "Yillik Tajriba",
+          "training": "Maxsus Trening",
+          "insurance": "To'liq Sug'urta",
+          "support": "24/7 Qo'llab-quvvatlash"
+        }
+      },
+      "cultural": {
+        "title": "Madaniy Tajriba",
+        "description": "Mahalliy an'analar va urf-odatlar bilan tanishing",
+        "features": {
+          "traditions": "Mahalliy An'analar",
+          "traditionsDesc": "Asriy an'analar va madaniyat bilan tanishing",
+          "workshops": "Madaniy Ustaxonalar",
+          "workshopsDesc": "An'anaviy hunarmandchilik va san'at ustaxonalari",
+          "events": "Madaniy Tadbirlar",
+          "eventsDesc": "Milliy bayramlar va festivallar"
+        },
+        "stats": {
+          "experiences": "Madaniy Tajribalar",
+          "artisans": "Mahalliy Ustalar",
+          "workshops": "Ustaxonalar",
+          "festivals": "Milliy Bayramlar",
+          "cuisine": "Milliy Taomlar",
+          "crafts": "An'anaviy Hunarmandchilik",
+          "music": "Milliy Musiqa",
+          "dance": "Milliy Raqs",
+          "heritage": "Madaniy Meros"
+        }
+      },
+      "events": {
+        "title": "Mahalliy Tadbirlar",
+        "description": "O'zbekistonning eng qiziqarli mahalliy tadbirlarini kashf eting",
+        "features": {
+          "calendar": "Tadbirlar Taqvimi",
+          "calendarDesc": "Barcha mahalliy tadbirlarning to'liq taqvimi",
+          "tickets": "Chipta Xizmati",
+          "ticketsDesc": "Tadbirlarga chipta sotib olish va bron qilish",
+          "updates": "Jonli Yangilanishlar",
+          "updatesDesc": "Tadbirlar haqida so'nggi yangiliklar va o'zgarishlar"
+        },
+        "stats": {
+          "daily": "Kunlik Tadbirlar",
+          "venues": "Tadbir Joylari",
+          "organizers": "Tashkilotchilar",
+          "participants": "Ishtirokchilar",
+          "categories": "Tadbir Turlari",
+          "ratings": "O'rtacha Reyting",
+          "bookings": "Onlayn Bronlar",
+          "satisfaction": "Mijoz Mamnuniyati",
+          "coverage": "Shahar Qamrovi"
+        }
+      },
+      "customization": {
+        "title": "Sayohatni Moslashtirish",
+        "description": "O'z sayohatingizni shaxsiy istaklaringizga moslang",
+        "features": {
+          "planning": "Sayohat Rejasi",
+          "planningDesc": "Shaxsiy sayohat rejangizni tuzing",
+          "preferences": "Shaxsiy Sozlamalar",
+          "preferencesDesc": "O'z afzalliklaringizni belgilang",
+          "support": "24/7 Yordam",
+          "supportDesc": "Doimiy professional yordam"
+        },
+        "stats": {
+          "options": "Moslashtirish Imkoniyatlari",
+          "routes": "Sayohat Yo'nalishlari",
+          "services": "Qo'shimcha Xizmatlar",
+          "languages": "Til Tanlovlari",
+          "guides": "Shaxsiy Gidlar",
+          "transport": "Transport Turlari",
+          "hotels": "Mehmonxona Toifalari",
+          "meals": "Ovqatlanish Variantlari",
+          "activities": "Faoliyat Turlari"
         }
       }
     }
