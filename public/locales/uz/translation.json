@@ -1,0 +1,626 @@
+{
+  "nav": {
+    "destinations": "Yo'nalishlar",
+    "categories": "Kategoriyalar",
+    "flights": "Parvozlar",
+    "bookings": "Bronlar"
+  },
+  "footer": {
+    "quickLinks": "Tezkor havolalar",
+    "popularDestinations": "Mashhur manzillar",
+    "contactInfo": "Aloqa ma'lumotlari",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "tours": "Turlar",
+    "company": {
+      "name": "Sarhad Travel",
+      "description": "O'zbekistonning sehrli go'zalligini bizning professional sayohatlarimiz bilan kashf eting. Buyuk Ipak yo'lining boy tarixi va jonli madaniyatini his eting."
+    },
+    "sections": {
+      "quickLinks": "Tezkor havolalar",
+      "popularDestinations": "Mashhur manzillar",
+      "contactInfo": "Aloqa ma'lumotlari"
+    },
+    "quickLinks": {
+      "home": "Bosh sahifa",
+      "about": "Biz haqimizda",
+      "destinations": "Manzillar",
+      "tours": "Turlar",
+      "contact": "Aloqa"
+    },
+    "destinations": {
+      "tashkent": "Toshkent",
+      "samarkand": "Samarqand",
+      "bukhara": "Buxoro",
+      "khiva": "Xiva",
+      "ferganaValley": "Farg'ona vodiysi",
+      "nukus": "Nukus"
+    },
+    "contact": {
+      "address": "Amir Temur shoh ko'chasi 7, Toshkent, O'zbekiston",
+      "phone": "+998 71 234 5678",
+      "email": "info@marooftour.com"
+    },
+    "bottom": {
+      "rights": "{{year}} Sarhad Travel. Barcha huquqlar himoyalangan.",
+      "privacy": "Maxfiylik siyosati",
+      "terms": "Foydalanish shartlari",
+      "sitemap": "Sayt xaritasi"
+    }
+  },
+  "destinations": {
+    "tashkent": "Toshkent",
+    "samarkand": "Samarqand",
+    "bukhara": "Buxoro",
+    "khiva": "Xiva",
+    "ferganaValley": "Farg'ona vodiysi",
+    "nukus": "Nukus"
+  },
+  "hero": {
+    "badge": {
+      "agency": "#1 Sayohat Agentligi",
+      "availability": "Jonli Mavjudlik"
+    },
+    "heading": {
+      "part1": "Dunyoni",
+      "part2": "Biz Bilan Kashf Eting"
+    },
+    "description": "Biz bilan professional tarzda tashkil etilgan sayohat tajribalariga qadam qo'ying. Yashirin javohirlardan tortib mashhur joylar gacha, biz har bir lahzani unutilmas qilamiz.",
+    "cta": {
+      "start": "Sayohatni Boshlang",
+      "watch": "Videoni Ko'rish"
+    },
+    "stats": {
+      "travelers": {
+        "number": "20K+",
+        "label": "Baxtli Sayohatchilar"
+      },
+      "destinations": {
+        "number": "500+",
+        "label": "Yo'nalishlar"
+      },
+      "support": {
+        "number": "24/7",
+        "label": "Qo'llab-quvvatlash"
+      }
+    },
+    "awards": {
+      "title": "Eng Yaxshi Agentlik",
+      "subtitle": "2023 yil G'olibi"
+    },
+    "rating": {
+      "title": "Yuqori Baholangan",
+      "subtitle": "5 dan 4.9 yulduz"
+    }
+  },
+  "categories": {
+    "section": {
+      "title": "Mashhur Toifalar",
+      "description": "Eng ko'p so'ralgan sayohat tajribalarimizni kashf eting va o'zingizning mukammal sarguzashtingizni toping"
+    },
+    "items": {
+      "weather": {
+        "title": "Ob-havo Ma'lumotlari",
+        "description": "Manzilingiz uchun real vaqt ob-havo ma'lumotlari"
+      },
+      "flights": {
+        "title": "Eng Yaxshi Parvozlar",
+        "description": "Eng qulay parvoz variantlarini toping"
+      },
+      "events": {
+        "title": "Mahalliy Tadbirlar",
+        "description": "Qiziqarli mahalliy tadbirlar va faoliyatlarni kashf eting",
+        "features": {
+          "calendar": "Tadbirlar Taqvimi",
+          "calendarDesc": "Interaktiv taqvim orqali tadbirlarni rejalashtiring",
+          "booking": "Tadbir Band Qilish",
+          "bookingDesc": "Mashhur mahalliy tabirlardan joy band qiling",
+          "recommendations": "Shaxsiy Tavsiyalar",
+          "recommendationsDesc": "Qiziqishlaringizga asoslangan tadbirlar tavsiyalari"
+        },
+        "stats": {
+          "events": "Kunlik Tadbirlar",
+          "venues": "Hamkor Joylar",
+          "booking": "Tezkor Band Qilish",
+          "updates": "Jonli Yangilanishlar",
+          "categories": "Tadbir Turlari",
+          "exclusive": "Maxsus Tadbirlar",
+          "local": "Mahalliy Tajribalar",
+          "cultural": "Madaniy Ko'rsatuvlar",
+          "activities": "Faoliyatlar"
+        }
+      },
+      "customization": {
+        "title": "Moslashtiruv",
+        "description": "Sayohat tajribangizni moslashtiring",
+        "features": {
+          "itinerary": "Maxsus Marshrut",
+          "itineraryDesc": "O'zingizga mos sayohat jadvalini tuzing",
+          "preferences": "Sayohat Afzalliklari",
+          "preferencesDesc": "Moslashtirilgan tajriba uchun afzalliklaringizni belgilang",
+          "assistance": "Shaxsiy Yordamchi",
+          "assistanceDesc": "Sayohat ekspertlaridan yordam oling"
+        },
+        "stats": {
+          "options": "Moslashtiruv Imkoniyatlari",
+          "satisfaction": "Mijoz Mamnuniyati",
+          "support": "24/7 Qo'llab-quvvatlash",
+          "experts": "Sayohat Ekspertlari",
+          "destinations": "Manzillar",
+          "activities": "Faoliyatlar",
+          "languages": "Tillar",
+          "packages": "Maxsus Paketlar",
+          "reviews": "Ijobiy Sharhlar"
+        }
+      },
+      "adventure": {
+        "title": "Sarguzasht Turlar",
+        "description": "Ajoyib manzaralarda hayajonli sarguzashtlarga boring",
+        "features": {
+          "activities": "Sarguzasht Faoliyatlari",
+          "activitiesDesc": "Turli qiziqarli faoliyatlardan tanlang",
+          "equipment": "Jihozlar Ijarasi",
+          "equipmentDesc": "Yuqori sifatli sarguzasht jihozlariga kirish",
+          "guides": "Tajribali Yo'riqchilar",
+          "guidesDesc": "Xavfsizligingiz uchun professional yo'riqchilar"
+        },
+        "stats": {
+          "adventures": "Sarguzasht Turlari",
+          "locations": "Manzillar",
+          "guides": "Tajribali Yo'riqchilar",
+          "equipment": "Jihozlar Tanlovlari",
+          "safety": "Xavfsizlik Ko'rsatkichi",
+          "training": "O'quv Mashg'ulotlari",
+          "difficulty": "Qiyinlik Darajalari",
+          "groups": "Guruh O'lchamlari",
+          "insurance": "Sug'urta Qamrovi"
+        }
+      },
+      "cultural": {
+        "title": "Madaniy Tajribalar",
+        "description": "Mahalliy an'analar va urf-odatlarni o'rganing",
+        "features": {
+          "traditions": "Mahalliy An'analar",
+          "traditionsDesc": "Haqiqiy madaniy amaliyotlarni o'rganing",
+          "workshops": "Madaniy Ustaxonalar",
+          "workshopsDesc": "An'anaviy san'at va hunarmandchilikni o'rganing",
+          "cuisine": "Mahalliy Taomlar",
+          "cuisineDesc": "Haqiqiy mahalliy taomlarni tating"
+        },
+        "stats": {
+          "experiences": "Madaniy Tajribalar",
+          "communities": "Mahalliy Jamoalar",
+          "workshops": "Haftalik Ustaxonalar",
+          "cuisine": "Mahalliy Taomlar",
+          "artisans": "Mahalliy Hunarmandlar",
+          "traditions": "An'anaviy Tadbirlar",
+          "languages": "Mahalliy Tillar",
+          "heritage": "Meros Joylari",
+          "festivals": "Yillik Festivallar"
+        }
+      }
+    },
+    "button": "Batafsil",
+    "notFound": "Kategoriya topilmadi",
+    "items": {
+      "weather": {
+        "title": "Ob-havo ma'lumotlari",
+        "description": "Sayohat manzillaringizdagi ob-havo sharoitlaridan xabardor bo'ling",
+        "features": {
+          "forecast": "Batafsil prognoz",
+          "forecastDesc": "Butun sayohatingiz uchun aniq ob-havo bashoratlarini oling",
+          "alerts": "Ob-havo ogohlantirishi",
+          "alertsDesc": "Ob-havo o'zgarishlari haqida real vaqt xabarnomalarini oling",
+          "planning": "Sayohat rejasi",
+          "planningDesc": "Ob-havo sharoitlariga qarab faoliyatingizni rejalashtiring"
+        },
+        "stats": {
+          "updates": "24/7 Yangilanishlar",
+          "accuracy": "95% Aniqlik",
+          "forecast": "10 kunlik prognoz",
+          "alerts": "Real vaqt ogohlantirishlari",
+          "notifications": "Maxsus xabarnomalar",
+          "emergency": "Favqulodda yangilanishlar",
+          "planning": "Aqlli rejalashtirish",
+          "suggestions": "Faoliyat takliflari",
+          "insights": "Mahalliy ma'lumotlar"
+        }
+      },
+      "flights": {
+        "title": "Parvozlarni bron qilish",
+        "description": "Eng yaxshi parvozlarni toping va bron qiling",
+        "features": {
+          "booking": "Oson bron qilish",
+          "bookingDesc": "Oddiy va tez parvozlarni bron qilish jarayoni",
+          "tracking": "Parvozlarni kuzatish",
+          "trackingDesc": "Parvoz holati va kechikishlar haqida real vaqt yangilanishlari",
+          "deals": "Eng yaxshi takliflar",
+          "dealsDesc": "Parvozlar uchun eng raqobatbardosh narxlarni toping"
+        },
+        "stats": {
+          "booking": "Tezkor bron qilish",
+          "support": "24/7 Qo'llab-quvvatlash",
+          "guarantee": "Eng yaxshi narx kafolati",
+          "tracking": "Jonli yangilanishlar",
+          "notifications": "Kechikish xabarnomasi",
+          "changes": "Chiqish darvozasi o'zgarishlari",
+          "deals": "Narx ogohlantirishlari",
+          "exclusive": "Maxsus takliflar",
+          "comparison": "Narxlarni taqqoslash"
+        }
+      }
+    }
+  },
+  "flights": {
+    "section": {
+      "title": "Keyingi Sarguzashtingizni Kashf Eting",
+      "description": "Bizning maxsus tanlangan yo'nalishlarimiz bilan umrbod esda qoladigan sayohatga chiqing. Har bir sayohat unutilmas xotiralar yaratish uchun mo'ljallangan."
+    },
+    "title": "Mashhur Parvozlar",
+    "description": "Eng yaxshi parvoz takliflarimiz bilan ajoyib yo'nalishlarni kashf eting",
+    "destinations": {
+      "dubai": {
+        "name": "Dubay",
+        "description": "BAA yuragida hashamat va zamonaviylik"
+      },
+      "maldives": {
+        "name": "Maldiv orollari",
+        "description": "Tiniq suvli jannat orollari"
+      },
+      "bali": {
+        "name": "Bali",
+        "description": "Boy madaniyatga ega tropik jannat"
+      },
+      "paris": {
+        "name": "Parij",
+        "description": "Muhabbat va cheksiz romantika shahri"
+      },
+      "tokyo": {
+        "name": "Tokio",
+        "description": "An'anaviy jozibaga ega zamonaviy megapolis"
+      },
+      "newyork": {
+        "name": "Nyu-York",
+        "description": "Hech qachon uxlamaydigan shahar"
+      },
+      "singapore": {
+        "name": "Singapur",
+        "description": "Ajoyib arxitekturaga ega bog'-shahar"
+      },
+      "london": {
+        "name": "London",
+        "description": "Tarixiy joziba zamonaviy madaniyat bilan uchrashadigan joy"
+      },
+      "istanbul": {
+        "name": "Istanbul",
+        "description": "Sharq va G'arb mukammal uyg'unlikda uchrashgan joy"
+      }
+    },
+    "card": {
+      "hours": "soat",
+      "reviews": "{{count}} ta sharh",
+      "availableSeats": "{{count}} ta bo'sh o'rin",
+      "price": "{{price}}",
+      "perPerson": "kishi boshiga",
+      "duration": "Davomiyligi",
+      "viewDetails": "Batafsil"
+    }
+  },
+  "flightDetails": {
+    "notFound": "Parvoz topilmadi",
+    "flightInfo": "Parvoz ma'lumotlari",
+    "bookingInfo": "Bron qilish ma'lumotlari",
+    "departure": "Jo'nash",
+    "duration": "Davomiyligi",
+    "days": "kun",
+    "dates": "Sayohat sanalari",
+    "price": "Narxi",
+    "availableSeats": "Bo'sh o'rinlar",
+    "seats": "o'rin",
+    "rating": "Reyting",
+    "reviews": "sharhlar",
+    "bookNow": "Hozir band qilish"
+  },
+  "placeGallery": {
+    "header": {
+      "title": "Mijozlarimizdan go'zal lahzalar",
+      "description": "Dunyo bo'ylab go'zal manzillarni qidiring va o'rganing"
+    },
+    "search": {
+      "placeholder": "Manzillarni qidirish..."
+    },
+    "filters": {
+      "all": "hammasi",
+      "beach": "sohil",
+      "mountain": "tog'",
+      "cultural": "madaniy",
+      "desert": "cho'l"
+    },
+    "places": {
+      "santorini": {
+        "name": "Santorini, Gretsiya",
+        "description": "Oq binolar va moviy gumbazlari bilan mashhur"
+      },
+      "swissAlps": {
+        "name": "Shveytsariya Alplari",
+        "description": "Chang'i va piyoda sayr uchun ajoyib tog' tizmalari"
+      },
+      "kyoto": {
+        "name": "Kioto, Yaponiya",
+        "description": "Qadimiy ibodatxonalar va go'zal sakura gulli daraxtlar"
+      },
+      "maldives": {
+        "name": "Maldiv Orollari",
+        "description": "Tiniq suvlar va hashamatli suv usti villalari"
+      },
+      "sahara": {
+        "name": "Saxroi Kabir",
+        "description": "Cheksiz qum barxanlari va ajoyib cho'l manzaralari"
+      }
+    },
+    "card": {
+      "likes": "yoqdi",
+      "location": "Joylashuv"
+    }
+  },
+  "travelGuide": {
+    "header": {
+      "title": "Sizning To'liq Sayohat Qo'llanmangiz",
+      "description": "Qulay va maroqli sayohat uchun bilishingiz kerak bo'lgan barcha ma'lumotlar, sayohat ekspertlari tomonidan tayyorlangan."
+    },
+    "guides": {
+      "bestTime": {
+        "title": "Tashrif Uchun Eng Yaxshi Vaqt",
+        "items": [
+          "Dubai: oktyabr - aprel",
+          "Maldiv: dekabr - aprel",
+          "Santorini: aprel - oktyabr",
+          "Istanbul: mart - may"
+        ]
+      },
+      "documents": {
+        "title": "Sayohat Hujjatlari",
+        "items": [
+          "Amaldagi pasport",
+          "Sayohat sug'urtasi",
+          "Viza talablari",
+          "Tibbiy sertifikatlar"
+        ]
+      },
+      "packing": {
+        "title": "Nima Olish Kerak",
+        "items": [
+          "Ob-havoga mos kiyimlar",
+          "Sayohat adapterlari",
+          "Zarur dori-darmonlar",
+          "Sayohat hujjatlari"
+        ]
+      },
+      "customs": {
+        "title": "Mahalliy Urf-odatlar",
+        "items": [
+          "Kiyinish qoidalari",
+          "Ovqatlanish odobi",
+          "Diniy urf-odatlar",
+          "Mahalliy salomlashishlar"
+        ]
+      },
+      "dining": {
+        "title": "Ovqatlanish Qo'llanmasi",
+        "items": [
+          "Mahalliy taomlar",
+          "Restoran tavsiyalari",
+          "Parhez maslahatlar",
+          "Oziq-ovqat xavfsizligi"
+        ]
+      },
+      "connectivity": {
+        "title": "Aloqa",
+        "items": [
+          "Mahalliy SIM-kartalar",
+          "Wi-Fi mavjudligi",
+          "Favqulodda raqamlar",
+          "Aloqa ilovalari"
+        ]
+      },
+      "budget": {
+        "title": "Byudjet Rejalashtirish",
+        "items": [
+          "Valyuta ayirboshlash",
+          "Kunlik byudjet maslahatlari",
+          "To'lov usullari",
+          "Choycha madaniyati"
+        ]
+      },
+      "safety": {
+        "title": "Xavfsizlik Maslahatlar",
+        "items": [
+          "Favqulodda raqamlar",
+          "Hudud bo'yicha ko'rsatmalar",
+          "Sog'liq ehtiyot choralari",
+          "Sug'urta tafsilotlari"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "section": {
+      "title": "Sayohatchilarimiz Nima Deyishadi",
+      "description": "Biz bilan dunyoni kashf etgan haqiqiy sayohatchilarning taassurotlari."
+    },
+    "reviews": {
+      "sarah": {
+        "name": "Otabek Rahimov",
+        "location": "Toshkent, O'zbekiston",
+        "text": "Dubayga sayohat ajoyib bo'ldi! Har bir detallarga e'tibor va shaxsiy xizmat uni unutilmas qildi.",
+        "destination": "Dubay"
+      },
+      "michael": {
+        "name": "Shoxjahon Ismoilov",
+        "location": "Samarqand, O'zbekiston",
+        "text": "Santorini barcha kutganlarimizdan ham yaxshiroq chiqdi. Mahalliy gidlar bilimdon, turar joy esa mukammal edi.",
+        "destination": "Santorini"
+      },
+      "emma": {
+        "name": "O'tkir Azizov",
+        "location": "Buxoro, O'zbekiston",
+        "text": "Maldivedagi asal oyimiz xuddi tushday edi. Har bir detal mukammal rejalashtirilgan va amalga oshirilgan.",
+        "destination": "Maldiv"
+      }
+    },
+    "weather": {
+      "1": {
+        "name": "Jamshid Karimov",
+        "comment": "Ob-havo bashorati sayohatimni mukammal rejalashtirish imkonini berdi!",
+        "location": "Toshkent"
+      },
+      "2": {
+        "name": "Dilshod Umarov",
+        "comment": "Real vaqt ogohlantirishlari bizning tadbirimizni saqlab qoldi!",
+        "location": "Samarqand"
+      }
+    },
+    "flights": {
+      "1": {
+        "name": "Bobur Alimov",
+        "comment": "Bu xizmat orqali eng yaxshi parvoz takliflarini topdim!",
+        "location": "Xiva"
+      },
+      "2": {
+        "name": "Sardor Rashidov",
+        "comment": "Bron qilish jarayoni oson va mijozlarni qo'llab-quvvatlash ajoyib",
+        "location": "Buxoro"
+      }
+    },
+    "tripTo": "Sayohat"
+  },
+  "adventurePlanner": {
+    "section": {
+      "title": "Ajoyib Sarguzashtlar Kutmoqda",
+      "description": "O'z chegaralaringizni sinab ko'radigan va unutilmas xotiralar yaratadigan g'aroyib sayohatlarga chiqing."
+    },
+    "activities": {
+      "mountainClimbing": {
+        "name": "Tog'ga Chiqish",
+        "description": "Dunyoning eng qiyin cho'qqilarini zabt eting va yuqoridan ajoyib manzaralarni tomosha qiling.",
+        "difficulty": "Qiyin",
+        "duration": "2-3 kun",
+        "season": "Yoz",
+        "locations": ["Alplar", "Himolay", "Rokki tog'lari"]
+      },
+      "scubaDiving": {
+        "name": "Suvosti Suzish",
+        "description": "Rang-barang marjon riflarini o'rganing va sehrli suv osti dunyosini kashf eting.",
+        "difficulty": "O'rta",
+        "duration": "Yarim kun",
+        "season": "Yil davomida",
+        "locations": ["Buyuk Marjon Rifi", "Maldiv", "Karib orollari"]
+      },
+      "hiking": {
+        "name": "Piyoda Sayohat",
+        "description": "Go'zal so'qmoqlar bo'ylab sayohat qiling va tabiatning eng chiroyli manzaralarini his eting.",
+        "difficulty": "Oson-O'rta",
+        "duration": "4-6 soat",
+        "season": "Bahor/Kuz",
+        "locations": ["Milliy bog'lar", "O'rmon so'qmoqlari", "Tog' yo'llari"]
+      },
+      "skiing": {
+        "name": "Chang'i",
+        "description": "Toza qorda sirpaning va tog' yonbag'irlarining hayajonini his eting.",
+        "difficulty": "O'rta",
+        "duration": "Butun kun",
+        "season": "Qish",
+        "locations": ["Shveytsariya Alplari", "Aspen", "Vistler"]
+      }
+    },
+    "labels": {
+      "difficulty": "Qiyinlik",
+      "duration": "Davomiyligi",
+      "season": "Mavsum"
+    }
+  },
+  "contactForm": {
+    "section": {
+      "title": "Biz Bilan Bog'laning",
+      "description": "Savollaringiz bormi? Biz sizga yordam berishdan mamnun bo'lamiz."
+    },
+    "contact": {
+      "email": {
+        "title": "Elektron pochta",
+        "primary": "info@marooftour.com",
+        "support": "support@marooftour.com"
+      },
+      "phone": {
+        "title": "Telefon",
+        "primary": "+1 (555) 123-4567",
+        "secondary": "+1 (555) 987-6543"
+      },
+      "address": {
+        "title": "Manzil",
+        "line1": "123 Travel Street",
+        "line2": "Adventure City, AC 12345"
+      }
+    },
+    "form": {
+      "labels": {
+        "name": "Ism",
+        "email": "Elektron pochta",
+        "phone": "Telefon (Ixtiyoriy)",
+        "subject": "Mavzu",
+        "message": "Xabar"
+      },
+      "placeholders": {
+        "name": "Aziz Azizov",
+        "email": "aziz@example.com",
+        "phone": "+1 (555) 123-4567",
+        "subject": "Qanday yordam bera olamiz?",
+        "message": "Sayohat rejalaringiz haqida batafsil ma'lumot bering..."
+      },
+      "errors": {
+        "name": "Ism kiritish majburiy",
+        "email": {
+          "required": "Elektron pochta kiritish majburiy",
+          "invalid": "Elektron pochta noto'g'ri formatda"
+        },
+        "message": "Xabar yozish majburiy"
+      },
+      "button": {
+        "send": "Xabarni Yuborish",
+        "sending": "Yuborilmoqda..."
+      },
+      "success": "Xabar muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz.",
+      "error": "Xabarni yuborishda xatolik yuz berdi. Iltimos, keyinroq qayta urinib ko'ring."
+    }
+  },
+  "bookingModal": {
+    "title": "Parvozni bron qilish",
+    "flightDetails": "Parvoz tafsilotlari",
+    "form": {
+      "name": "To'liq ism",
+      "namePlaceholder": "To'liq ismingizni kiriting",
+      "phone": "Telefon raqami",
+      "phonePlaceholder": "Telefon raqamingizni kiriting"
+    },
+    "errors": {
+      "nameRequired": "Ism kiritish majburiy",
+      "phoneRequired": "Telefon raqami kiritish majburiy",
+      "submitError": "Bronni yuborishda xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
+    },
+    "buttons": {
+      "submit": "Bron qilish",
+      "submitting": "Bron qilinmoqda...",
+      "cancel": "Bekor qilish"
+    }
+  },
+  "common": {
+    "showMore": "Ko'proq ko'rish",
+    "showLess": "Kamroq ko'rish",
+    "overview": "Umumiy ma'lumot",
+    "features": "Xususiyatlar",
+    "gallery": "Galereya",
+    "testimonials": "Sharhlar",
+    "goBack": "Orqaga",
+    "learnMore": "Batafsil",
+    "viewImage": "Rasmni ko'rish"
+  }
+}

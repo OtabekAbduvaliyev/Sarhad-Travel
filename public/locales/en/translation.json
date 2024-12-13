@@ -1,0 +1,636 @@
+{
+  "nav": {
+    "destinations": "Destinations",
+    "categories": "Categories",
+    "flights": "Flights",
+    "bookings": "Bookings"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "popularDestinations": "Popular Destinations",
+    "contactInfo": "Contact Info",
+    "about": "About Us",
+    "contact": "Contact",
+    "tours": "Tours",
+    "company": {
+      "name": "Maroof Tour",
+      "description": "Explore the enchanting beauty of Uzbekistan with our expertly curated tours. Experience the rich history of the Silk Road and immerse yourself in the vibrant culture."
+    },
+    "sections": {
+      "quickLinks": "Quick Links",
+      "popularDestinations": "Popular Destinations",
+      "contactInfo": "Contact Info"
+    },
+    "quickLinks": {
+      "home": "Home",
+      "about": "About Us",
+      "destinations": "Destinations",
+      "tours": "Tours",
+      "contact": "Contact"
+    },
+    "destinations": {
+      "tashkent": "Tashkent",
+      "samarkand": "Samarkand",
+      "bukhara": "Bukhara",
+      "khiva": "Khiva",
+      "ferganaValley": "Fergana Valley",
+      "nukus": "Nukus"
+    },
+    "contact": {
+      "address": "7 Amir Temur Avenue, Tashkent, Uzbekistan",
+      "phone": "+998 71 234 5678",
+      "email": "info@marooftour.com"
+    },
+    "bottom": {
+      "rights": "{{year}} Maroof Tour. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "sitemap": "Sitemap"
+    }
+  },
+  "destinations": {
+    "tashkent": "Tashkent",
+    "samarkand": "Samarkand",
+    "bukhara": "Bukhara",
+    "khiva": "Khiva",
+    "ferganaValley": "Fergana Valley",
+    "nukus": "Nukus"
+  },
+  "hero": {
+    "badge": {
+      "agency": "#1 Travel Agency ",
+      "availability": "Live Availability"
+    },
+    "heading": {
+      "part1": "Explore The",
+      "part2": "World With Us"
+    },
+    "description": "Embark on a journey of discovery with our expertly curated travel experiences. From hidden gems to iconic landmarks, we make every moment unforgettable.",
+    "cta": {
+      "start": "Start Your Journey",
+      "watch": "Watch Video"
+    },
+    "stats": {
+      "travelers": {
+        "number": "20K+",
+        "label": "Happy Travelers"
+      },
+      "destinations": {
+        "number": "500+",
+        "label": "Destinations"
+      },
+      "support": {
+        "number": "24/7",
+        "label": "Support"
+      }
+    },
+    "awards": {
+      "title": "Best Agency",
+      "subtitle": "2023 Award Winner"
+    },
+    "rating": {
+      "title": "Top Rated",
+      "subtitle": "4.9 out of 5 stars"
+    }
+  },
+  "categories": {
+    "section": {
+      "title": "Popular Categories",
+      "description": "Discover our most sought-after travel experiences and find your perfect adventure"
+    },
+    "notFound": "Category not found",
+    "button": "Learn More",
+    "items": {
+      "weather": {
+        "title": "Weather Updates",
+        "description": "Stay informed about weather conditions for your travel destinations",
+        "features": {
+          "forecast": "Detailed Forecasts",
+          "forecastDesc": "Get accurate weather predictions for your entire journey",
+          "alerts": "Weather Alerts",
+          "alertsDesc": "Receive real-time notifications about weather changes",
+          "planning": "Trip Planning",
+          "planningDesc": "Plan your activities based on weather conditions"
+        },
+        "stats": {
+          "updates": "24/7 Updates",
+          "accuracy": "95% Accuracy",
+          "forecast": "10-day Forecast",
+          "alerts": "Real-time Alerts",
+          "notifications": "Custom Notifications",
+          "emergency": "Emergency Updates",
+          "planning": "Smart Planning",
+          "suggestions": "Activity Suggestions",
+          "insights": "Local Insights"
+        }
+      },
+      "flights": {
+        "title": "Flight Bookings",
+        "description": "Find and book the best flights for your journey",
+        "features": {
+          "booking": "Easy Booking",
+          "bookingDesc": "Simple and quick flight reservation process",
+          "tracking": "Flight Tracking",
+          "trackingDesc": "Real-time updates on flight status and delays",
+          "deals": "Best Deals",
+          "dealsDesc": "Find the most competitive prices for your flights"
+        },
+        "stats": {
+          "booking": "Instant Booking",
+          "support": "24/7 Support",
+          "guarantee": "Best Price Guarantee",
+          "tracking": "Live Updates",
+          "notifications": "Delay Notifications",
+          "changes": "Gate Changes",
+          "deals": "Price Alerts",
+          "exclusive": "Exclusive Deals",
+          "comparison": "Price Comparison"
+        }
+      },
+      "events": {
+        "title": "Local Events",
+        "description": "Discover exciting local events and activities",
+        "features": {
+          "calendar": "Event Calendar",
+          "calendarDesc": "Browse and plan your activities with our interactive calendar",
+          "booking": "Event Booking",
+          "bookingDesc": "Secure your spots at popular local events",
+          "recommendations": "Personalized Recommendations",
+          "recommendationsDesc": "Get event suggestions based on your interests"
+        },
+        "stats": {
+          "events": "Daily Events",
+          "venues": "Partner Venues",
+          "booking": "Instant Booking",
+          "updates": "Live Updates",
+          "categories": "Event Categories",
+          "exclusive": "Exclusive Events",
+          "local": "Local Experiences",
+          "cultural": "Cultural Shows",
+          "activities": "Activities"
+        }
+      },
+      "customization": {
+        "title": "Customization",
+        "description": "Personalize your travel experience",
+        "features": {
+          "itinerary": "Custom Itinerary",
+          "itineraryDesc": "Create your perfect travel schedule",
+          "preferences": "Travel Preferences",
+          "preferencesDesc": "Set your preferences for a tailored experience",
+          "assistance": "Personal Assistant",
+          "assistanceDesc": "Get help from our travel experts"
+        },
+        "stats": {
+          "options": "Customization Options",
+          "satisfaction": "Customer Satisfaction",
+          "support": "24/7 Support",
+          "experts": "Travel Experts",
+          "destinations": "Destinations",
+          "activities": "Activities",
+          "languages": "Languages",
+          "packages": "Custom Packages",
+          "reviews": "Positive Reviews"
+        }
+      },
+      "adventure": {
+        "title": "Adventure Tours",
+        "description": "Embark on thrilling adventures across stunning landscapes",
+        "features": {
+          "activities": "Adventure Activities",
+          "activitiesDesc": "Choose from a variety of exciting activities",
+          "equipment": "Equipment Rental",
+          "equipmentDesc": "Access to high-quality adventure gear",
+          "guides": "Expert Guides",
+          "guidesDesc": "Professional guides for your safety"
+        },
+        "stats": {
+          "adventures": "Adventure Types",
+          "locations": "Locations",
+          "guides": "Expert Guides",
+          "equipment": "Equipment Options",
+          "safety": "Safety Record",
+          "training": "Training Sessions",
+          "difficulty": "Difficulty Levels",
+          "groups": "Group Sizes",
+          "insurance": "Insurance Coverage"
+        }
+      },
+      "cultural": {
+        "title": "Cultural Experiences",
+        "description": "Immerse yourself in local traditions and customs",
+        "features": {
+          "traditions": "Local Traditions",
+          "traditionsDesc": "Experience authentic cultural practices",
+          "workshops": "Cultural Workshops",
+          "workshopsDesc": "Learn traditional arts and crafts",
+          "cuisine": "Local Cuisine",
+          "cuisineDesc": "Taste authentic local dishes"
+        },
+        "stats": {
+          "experiences": "Cultural Experiences",
+          "communities": "Local Communities",
+          "workshops": "Weekly Workshops",
+          "cuisine": "Local Dishes",
+          "artisans": "Local Artisans",
+          "traditions": "Traditional Events",
+          "languages": "Local Languages",
+          "heritage": "Heritage Sites",
+          "festivals": "Annual Festivals"
+        }
+      }
+    }
+  },
+  "flights": {
+    "section": {
+      "title": "Discover Your Next Adventure",
+      "description": "Embark on a journey of a lifetime with our carefully curated destinations. Each trip is designed to create unforgettable memories."
+    },
+    "title": "Popular Flights",
+    "description": "Discover amazing destinations with our best flight deals",
+    "destinations": {
+      "dubai": {
+        "name": "Dubai",
+        "description": "Experience luxury in the heart of the UAE"
+      },
+      "maldives": {
+        "name": "Maldives",
+        "description": "Paradise islands with crystal clear waters"
+      },
+      "bali": {
+        "name": "Bali",
+        "description": "Tropical paradise with rich culture"
+      },
+      "paris": {
+        "name": "Paris",
+        "description": "The city of love and endless romance"
+      },
+      "tokyo": {
+        "name": "Tokyo",
+        "description": "Modern metropolis with traditional charm"
+      },
+      "newyork": {
+        "name": "New York",
+        "description": "The city that never sleeps"
+      },
+      "singapore": {
+        "name": "Singapore",
+        "description": "Garden city with stunning architecture"
+      },
+      "london": {
+        "name": "London",
+        "description": "Historic charm meets modern culture"
+      },
+      "istanbul": {
+        "name": "Istanbul",
+        "description": "Where East meets West in perfect harmony"
+      },
+      "dubai": {
+        "name": "Dubai",
+        "description": "Where luxury meets the future",
+        "shortDesc": "Experience the epitome of modern luxury in a city that never ceases to amaze"
+      },
+      "istanbul": {
+        "name": "Istanbul",
+        "description": "A journey through time",
+        "shortDesc": "Where ancient history meets modern charm in the crossroads of civilizations"
+      },
+      "maldives": {
+        "name": "Maldives",
+        "description": "Paradise Found",
+        "shortDesc": "Discover your own slice of paradise in the crystal-clear waters of the Indian Ocean"
+      },
+      "santorini": {
+        "name": "Santorini",
+        "description": "Mediterranean Dreams",
+        "shortDesc": "White-washed beauty meets stunning sunsets in the heart of the Aegean"
+      }
+    },
+    "card": {
+      "hours": "hours",
+      "reviews": "{{count, plural, one {# review} other {# reviews}}}",
+      "availableSeats": "{{count, plural, one {# seat available} other {# seats available}}}",
+      "price": "{{price}}",
+      "perPerson": "per person",
+      "duration": "Duration",
+      "viewDetails": "View Details"
+    }
+  },
+  "flightDetails": {
+    "notFound": "Flight not found",
+    "flightInfo": "Flight Information",
+    "bookingInfo": "Booking Information",
+    "departure": "Departure",
+    "duration": "Duration",
+    "days": "days",
+    "dates": "Travel Dates",
+    "price": "Price",
+    "availableSeats": "Available Seats",
+    "seats": "seats",
+    "rating": "Rating",
+    "reviews": "reviews",
+    "bookNow": "Book Now"
+  },
+  "placeGallery": {
+    "header": {
+      "title": "Discover Amazing Places",
+      "description": "Search and explore beautiful destinations around the world"
+    },
+    "search": {
+      "placeholder": "Search destinations..."
+    },
+    "filters": {
+      "all": "all",
+      "beach": "beach",
+      "mountain": "mountain",
+      "cultural": "cultural",
+      "desert": "desert"
+    },
+    "places": {
+      "santorini": {
+        "name": "Santorini, Greece",
+        "description": "Famous for its white-washed buildings and blue domes"
+      },
+      "swissAlps": {
+        "name": "Swiss Alps",
+        "description": "Majestic mountain ranges perfect for skiing and hiking"
+      },
+      "kyoto": {
+        "name": "Kyoto, Japan",
+        "description": "Ancient temples and beautiful cherry blossoms"
+      },
+      "maldives": {
+        "name": "Maldives",
+        "description": "Crystal clear waters and luxury overwater villas"
+      },
+      "sahara": {
+        "name": "Sahara Desert",
+        "description": "Endless dunes and stunning desert landscapes"
+      }
+    },
+    "card": {
+      "likes": "likes",
+      "location": "Location"
+    }
+  },
+  "travelGuide": {
+    "header": {
+      "title": "Your Ultimate Travel Guide",
+      "description": "Everything you need to know for a smooth and enjoyable journey, curated by travel experts."
+    },
+    "guides": {
+      "bestTime": {
+        "title": "Best Time to Visit",
+        "items": [
+          "Dubai: October to April",
+          "Maldives: December to April",
+          "Santorini: April to October",
+          "Istanbul: March to May"
+        ]
+      },
+      "documents": {
+        "title": "Travel Documents",
+        "items": [
+          "Valid Passport",
+          "Travel Insurance",
+          "Visa Requirements",
+          "Health Certificates"
+        ]
+      },
+      "packing": {
+        "title": "What to Pack",
+        "items": [
+          "Weather-appropriate Clothing",
+          "Travel Adapters",
+          "Essential Medications",
+          "Travel Documents"
+        ]
+      },
+      "customs": {
+        "title": "Local Customs",
+        "items": [
+          "Dress Code Guidelines",
+          "Dining Etiquette",
+          "Religious Customs",
+          "Local Greetings"
+        ]
+      },
+      "dining": {
+        "title": "Dining Guide",
+        "items": [
+          "Local Specialties",
+          "Restaurant Recommendations",
+          "Dietary Considerations",
+          "Food Safety Tips"
+        ]
+      },
+      "connectivity": {
+        "title": "Connectivity",
+        "items": [
+          "Local SIM Cards",
+          "Wi-Fi Availability",
+          "Emergency Contacts",
+          "Communication Apps"
+        ]
+      },
+      "budget": {
+        "title": "Budget Planning",
+        "items": [
+          "Currency Exchange",
+          "Daily Budget Tips",
+          "Payment Methods",
+          "Tipping Culture"
+        ]
+      },
+      "safety": {
+        "title": "Safety Tips",
+        "items": [
+          "Emergency Numbers",
+          "Area Guidelines",
+          "Health Precautions",
+          "Travel Insurance Details"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "section": {
+      "title": "What Our Travelers Say",
+      "description": "Real experiences from real travelers who have explored the world with us."
+    },
+    "reviews": {
+      "sarah": {
+        "name": "Sarah Johnson",
+        "location": "New York, USA",
+        "text": "The Dubai trip was absolutely incredible! The attention to detail and personalized service made it unforgettable.",
+        "destination": "Dubai"
+      },
+      "michael": {
+        "name": "Michael Chen",
+        "location": "Toronto, Canada",
+        "text": "Santorini exceeded all expectations. The local guides were knowledgeable and the accommodations were perfect.",
+        "destination": "Santorini"
+      },
+      "emma": {
+        "name": "Emma Wilson",
+        "location": "London, UK",
+        "text": "Our Maldives honeymoon was like a dream. Every detail was perfectly planned and executed.",
+        "destination": "Maldives"
+      }
+    },
+    "weather": {
+      "1": {
+        "name": "John Doe",
+        "comment": "The weather forecasting helped me plan my trip perfectly!",
+        "location": "New York"
+      },
+      "2": {
+        "name": "Sarah Smith",
+        "comment": "Real-time alerts saved our outdoor event!",
+        "location": "London"
+      }
+    },
+    "flights": {
+      "1": {
+        "name": "Mike Johnson",
+        "comment": "Found the best flight deals through this service!",
+        "location": "Sydney"
+      },
+      "2": {
+        "name": "Emma Wilson",
+        "comment": "Smooth booking process and great customer support",
+        "location": "Toronto"
+      }
+    },
+    "tripTo": "Trip to"
+  },
+  "adventurePlanner": {
+    "section": {
+      "title": "Epic Adventures Await",
+      "description": "Embark on extraordinary journeys that will challenge your limits and create unforgettable memories."
+    },
+    "activities": {
+      "mountainClimbing": {
+        "name": "Mountain Climbing",
+        "description": "Scale the world's most challenging peaks and experience breathtaking views from the top.",
+        "difficulty": "Hard",
+        "duration": "2-3 days",
+        "season": "Summer",
+        "locations": ["Alps", "Himalayas", "Rockies"]
+      },
+      "scubaDiving": {
+        "name": "Scuba Diving",
+        "description": "Explore vibrant coral reefs and discover the mesmerizing underwater world.",
+        "difficulty": "Moderate",
+        "duration": "Half day",
+        "season": "Year-round",
+        "locations": ["Great Barrier Reef", "Maldives", "Caribbean"]
+      },
+      "hiking": {
+        "name": "Hiking",
+        "description": "Journey through scenic trails and connect with nature's most beautiful landscapes.",
+        "difficulty": "Easy to Moderate",
+        "duration": "4-6 hours",
+        "season": "Spring/Fall",
+        "locations": ["National Parks", "Forest Trails", "Mountain Paths"]
+      },
+      "skiing": {
+        "name": "Skiing",
+        "description": "Glide through pristine snow and experience the thrill of mountain slopes.",
+        "difficulty": "Moderate",
+        "duration": "Full day",
+        "season": "Winter",
+        "locations": ["Swiss Alps", "Aspen", "Whistler"]
+      }
+    },
+    "labels": {
+      "difficulty": "Difficulty",
+      "duration": "Duration",
+      "season": "Season"
+    }
+  },
+  "contactForm": {
+    "section": {
+      "title": "Get in Touch",
+      "description": "Have questions? We'd love to hear from you."
+    },
+    "contact": {
+      "email": {
+        "title": "Email",
+        "primary": "info@marooftour.com",
+        "support": "support@marooftour.com"
+      },
+      "phone": {
+        "title": "Phone",
+        "primary": "+1 (555) 123-4567",
+        "secondary": "+1 (555) 987-6543"
+      },
+      "address": {
+        "title": "Address",
+        "line1": "123 Travel Street",
+        "line2": "Adventure City, AC 12345"
+      }
+    },
+    "form": {
+      "labels": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone (Optional)",
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "phone": "+1 (555) 123-4567",
+        "subject": "How can we help?",
+        "message": "Tell us more about your travel plans..."
+      },
+      "errors": {
+        "name": "Name is required",
+        "email": {
+          "required": "Email is required",
+          "invalid": "Email is invalid"
+        },
+        "message": "Message is required"
+      },
+      "button": {
+        "send": "Send Message",
+        "sending": "Sending..."
+      },
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "Failed to send message. Please try again later."
+    }
+  },
+  "bookingModal": {
+    "title": "Book Your Flight",
+    "flightDetails": "Flight Details",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number"
+    },
+    "errors": {
+      "nameRequired": "Name is required",
+      "phoneRequired": "Phone number is required",
+      "submitError": "Failed to submit booking. Please try again."
+    },
+    "buttons": {
+      "submit": "Book Now",
+      "submitting": "Booking...",
+      "cancel": "Cancel"
+    }
+  },
+  "common": {
+    "overview": "Overview",
+    "features": "Features",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "goBack": "Go Back",
+    "learnMore": "Learn More",
+    "viewImage": "View Image",
+    "showMore": "Show More",
+    "showLess": "Show Less"
+  }
+}
