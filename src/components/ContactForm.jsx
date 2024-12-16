@@ -52,7 +52,13 @@ const ContactForm = () => {
             setSubmitStatus({ type: '', message: '' });
             
             try {
+                // First verify the bot configuration
+                const { sendToTelegram, testTelegramBot } = await import('../utils/telegram');
+                await testTelegramBot();
+                
+                // If verification passes, proceed with sending the message
                 await sendToTelegram(formData);
+                
                 setFormData({
                     name: '',
                     email: '',
@@ -68,7 +74,7 @@ const ContactForm = () => {
                 console.error('Error submitting form:', error);
                 setSubmitStatus({
                     type: 'error',
-                    message: t('contactForm.form.error')
+                    message: `${t('contactForm.form.error')}: ${error.message}`
                 });
             } finally {
                 setIsSubmitting(false);

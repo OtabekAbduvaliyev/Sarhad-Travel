@@ -1,17 +1,21 @@
-const TELEGRAM_BOT_TOKEN = '7736775159:AAEF3duVBKvfMLWdi7V5iGJX-JUF6hBNjjM';
-const TELEGRAM_CHAT_ID = '733611606';
+const TELEGRAM_BOT_TOKEN = '7651029960:AAE17FHcjA8CygDxAt0Xy154m4706CK0jT4';
+let TELEGRAM_CHAT_ID = null;
 
 // Get the latest chat ID from Telegram
 const getUpdates = async () => {
     try {
         const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates`);
         const data = await response.json();
+        console.log('Updates response:', data);
         if (data.ok && data.result.length > 0) {
             const lastUpdate = data.result[data.result.length - 1];
-            return lastUpdate.message.chat.id;
+            if (lastUpdate.message && lastUpdate.message.chat) {
+                return lastUpdate.message.chat.id;
+            }
         }
         return null;
     } catch (error) {
+        console.error('Error getting updates:', error);
         return null;
     }
 };
@@ -25,54 +29,82 @@ const getFormattedTime = () => {
     }).format(now);
 };
 
-// Get user's location if they allow
-const getUserLocation = async () => {
+// Test function to verify bot configuration
+export const testTelegramBot = async () => {
     try {
-        const position = await new Promise((resolve, reject) => {
-            navigator.geolocation.getCurrentPosition(resolve, reject, {
-                enableHighAccuracy: true,
-                timeout: 5000,
-                maximumAge: 0
-            });
-        });
+        // First test if the bot is valid
+        const botResponse = await fetch(
+            `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getMe`
+        );
+        const botData = await botResponse.json();
+        if (!botData.ok) {
+            throw new Error(`Bot verification failed: ${botData.description}`);
+        }
+        console.log('Bot verification successful:', botData.result);
+
+        // Get the latest chat ID
+        const chatId = await getUpdates();
+        if (!chatId) {
+            throw new Error('Could not find chat ID. Please message the bot first with /start');
+        }
+        console.log('Found chat ID:', chatId);
+        TELEGRAM_CHAT_ID = chatId;
+
+        // Verify we can access the chat
+        const chatResponse = await fetch(
+            `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getChat`,
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID
+                })
+            }
+        );
+        const chatData = await chatResponse.json();
+        if (!chatData.ok) {
+            throw new Error(`Chat verification failed: ${chatData.description}`);
+        }
+        console.log('Chat verification successful:', chatData.result);
         
-        return {
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude
-        };
+        return true;
     } catch (error) {
-        return null;
+        console.error('Bot verification error:', error);
+        throw error;
     }
 };
 
 export const sendToTelegram = async (formData) => {
     try {
-        const location = await getUserLocation();
-        const timestamp = getFormattedTime();
+        if (!TELEGRAM_CHAT_ID) {
+            // Try to get the chat ID if we don't have it
+            const chatId = await getUpdates();
+            if (!chatId) {
+                throw new Error('Could not find chat ID. Please message the bot first with /start');
+            }
+            TELEGRAM_CHAT_ID = chatId;
+        }
+
+        const timestamp = new Date().toLocaleString();
         
-        // Create a detailed message
         const message = `
-🆕 New Booking Request!
+🔔 Yangi Buyurtma!
 —————————————————
-👤 Customer Details:
-• Name: ${formData.name}
-• Phone: ${formData.phone}
+👤 Mijoz ma'lumotlari:
+• Ismi: ${formData.name || 'Kiritilmagan'}
+• Telefon: ${formData.phone || 'Kiritilmagan'}
+• Email: ${formData.email || 'Kiritilmagan'}
 
-🎫 Tour Information:
-• Tour: ${formData.tourName}
-• Price: ${formData.tourPrice}
-• Date: ${formData.tourDate}
+✉ Xabar:
+${formData.message || 'Xabar kiritilmagan'}
 
-⏰ Booking Time: ${timestamp}
+⏰ Buyurtma vaqti: ${timestamp}
 
-${location ? `📍 Customer Location:
-• Latitude: ${location.latitude}
-• Longitude: ${location.longitude}
-• Maps Link: https://www.google.com/maps?q=${location.latitude},${location.longitude}` : ''}
+🌐 Veb-sayt: https://sarhad-travel.vercel.app/
 
-🌐 Website: https://sarhad-travel.vercel.app/
-
-#NewBooking #SarhadTravel
+🔗 #YangiBuyurtma #SarhadTravel
 —————————————————`;
 
         const response = await fetch(
@@ -84,14 +116,16 @@ ${location ? `📍 Customer Location:
                 },
                 body: JSON.stringify({
                     chat_id: TELEGRAM_CHAT_ID,
-                    text: message,
-                    parse_mode: 'HTML'
+                    text: message
                 }),
             }
         );
 
-        if (!response.ok) {
-            throw new Error('Failed to send message to Telegram');
+        const responseData = await response.json();
+        console.log('Telegram send message response:', responseData);
+
+        if (!response.ok || !responseData.ok) {
+            throw new Error(`Failed to send message: ${responseData.description || 'Unknown error'}`);
         }
 
         return true;
